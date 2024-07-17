@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-7: State Management</title>
+    <link rel="stylesheet" href="./StateManagement.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 class="mainHeading textCenter">Task-7: State Management</h1>
+    <div id="container">
+      <div class="stepDiv flex">
+        <button id="step-Minus" class="minus backPurple" onclick="stepMinus()">
+          -
+        </button>
+        <h1 class="step">Step 1</h1>
+        <button id="step-Plus" class="plus backPurple" onclick="stepPlus()">
+          +
+        </button>
+      </div>
+
+      <div class="countDiv flex">
+        <button
+          id="count-Minus"
+          class="minus backPurple"
+          onclick="countMinus()"
+        >
+          -
+        </button>
+        <h1 class="count">Count 0</h1>
+        <button id="count-Plus" class="plus backPurple" onclick="countPlus()">
+          +
+        </button>
+      </div>
+      <div class="date flex">
+        <h2 class="datePara"></h2>
+      </div>
+      <h2 id="advice" class="textCenter"></h2>
+      <div class="resetDiv flex">
+        <button class="resetBtn backPurple plus" onclick="reset()">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="./StateManagement.js"></script>
+  </body>
+</html>
